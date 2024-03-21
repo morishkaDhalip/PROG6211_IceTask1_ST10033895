@@ -3,8 +3,7 @@ using ShoppingCartApp;
 
 class Program
 {
-    static void Main(string[] args)
-    {
+    
         static void Main(string[] args)
         {
             var shirt = new ClothingProduct("Shirt", 19.99, ProductCategory.Clothing, "L", "Blue");
@@ -14,11 +13,12 @@ class Program
             cart.AddProduct(shirt);
             cart.AddProduct(phone);
 
-            foreach (var product in cart.Products)
+            foreach (ShoppingCartApp.Product product in cart.Products)
             {
-                product?.GetInfo();
+                product.GetInfo();
+                Console.WriteLine();
             }
         }
-    }
+    
 }
 

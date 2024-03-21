@@ -24,7 +24,8 @@ namespace ShoppingCartApp
         public override void GetInfo()
         {
             base.GetInfo();
-            Console.WriteLine($"Brand: {Brand}, Model: {Model}");
+            Console.WriteLine($"Brand: {Brand}");
+            Console.WriteLine($"Model: {Model}");
         }
     }
 

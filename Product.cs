@@ -25,8 +25,9 @@ namespace ShoppingCartApp
 
         public virtual void GetInfo()
         {
-            Console.WriteLine($"Name: {Name}, Price: {Price}, Category: {Category}");
+            Console.WriteLine($"Product Name: {Name}");
+            Console.WriteLine($"Price: {Price}");
+            Console.WriteLine($"Category: {Category}");
         }
     }
-
 }

@@ -25,7 +25,8 @@ namespace ShoppingCartApp
         public override void GetInfo()
         {
             base.GetInfo();
-            Console.WriteLine($"Size: {Size}, Color: {Color}");
+            Console.WriteLine($"Size: {Size}");
+            Console.WriteLine($"Color: {Color}");
         }
     }
 
